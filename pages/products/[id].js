@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.css";
 
 // export async function getStaticProps({ params }) {
 //   //jsonファイルのデータを取りに行く。
-//   const req = await fetch(`http://localhost:3000/${params.id}.json`);
+//   const req = await fetch(`https://localhost:3000/${params.id}.json`);
 //   const data = await req.json();
 
 //   return {
@@ -13,7 +13,7 @@ import styles from "../../styles/Home.module.css";
 // }
 
 // export async function getStaticPaths() {
-//   const req = await fetch("http://localhost:3000/products.json");
+//   const req = await fetch("https://localhost:3000/products.json");
 //   const data = await req.json();
 
 //   const paths = data.map((product) => {
@@ -31,7 +31,7 @@ import styles from "../../styles/Home.module.css";
 // }
 
 export async function getServerSideProps({ params }) {
-  const req = await fetch(`http://localhost:3000/${params.id}.json`);
+  const req = await fetch(`https://localhost:3000/${params.id}.json`);
   const data = await req.json();
 
   return {
